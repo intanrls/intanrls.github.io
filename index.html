@@ -1,1 +1,119 @@
 Intan Nurlistiyani
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            margin-top: 20px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>Personal Web</h1>
+
+    <!-- Foto -->
+    <img src="foto.jpg" alt="Foto Profil" class="profile-pic">
+
+    <!-- Nama dan Info -->
+    <h2>Nama Kamu / NIM / Fakultas / Program Studi</h2>
+
+    <!-- Social Media -->
+    <div class="social-icons">
+        <a href="https://x.com" target="_blank">X</a>
+        <a href="https://github.com" target="_blank">Github</a>
+        <a href="https://instagram.com" target="_blank">IG</a>
+        <a href="#" target="_blank">dll</a>
+    </div>
+
+    <!-- Teks tambahan -->
+    <p>
+        Akun sosial media masing-masing.<br>
+        Ketika icon sosial media diklik, akan membuka halaman baru (tab baru).
+    </p>
+
+    <!-- Date and Time -->
+    <h3>Tanggal & Waktu Sekarang:</h3>
+    <p id="datetime"></p>
+
+    <script>
+        document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+    </script>
+
+    <!-- Tabel -->
+    <h3>Contoh Tabel Data</h3>
+    <table>
+        <tr>
+            <th>Mata Kuliah</th>
+            <th>SKS</th>
+            <th>Nilai</th>
+        </tr>
+        <tr>
+            <td>Pemrograman Web</td>
+            <td>3</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Basis Data</td>
+            <td>3</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>Jaringan Komputer</td>
+            <td>3</td>
+            <td>A-</td>
+        </tr>
+    </table>
+
+    <footer>
+        &copy; 2025 - Dibuat oleh Nama Kamu
+    </footer>
+
+</body>
+</html>
